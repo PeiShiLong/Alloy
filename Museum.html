@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+    <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+    <title>Museum Model</title></head>
+<body>
+    <h2>SWEN-220 Alloy Exam #1</h2><h2>Museum Model</h2>
+    <h3>Instructions</h3>
+    <p>Your instructor will tell you how to download the files needed for this&nbsp;exam.</p>
+    <p>You are to model a simple museum that loans some of its collection (at a
+      hefty price) to individual and corporate clients. The model uses the
+      predefined signatures and relations in file <em>Museum.als</em></p>
+    <p>The
+signatures, relations are documented, as are the facts you are to
+complete. If you have any questions about interpreting what is
+required, ask your instructor or create a comment in your model
+explaining how you interpreted the question.</p>
+    <p>You are <strong style="color: rgb(204, 0, 0);">NOT</strong> to:</p>
+    <ul>
+      <li>Add or modify any signatures or relations (fields),</li>
+      <li>Add any of your own facts. (You may optionally use predicates and/or
+assertions in developing your model, but remove them &nbsp;before submitting
+your final solution.)</li>
+      
+    </ul>
+    <h3>Brief Model Description</h3>
+    <p>The signatures in the model are:</p>
+    <ul>
+      <li><strong style="font-family: Helvetica,Arial,sans-serif;"><small><span>Picture</span></small>
+        </strong>- pictures in the museum's collection.</li>
+      <li><small><strong style="font-family: Helvetica,Arial,sans-serif;">Client
+          </strong></small>- individuals and corporations that can have pictures
+        on loaned, and can express the desire for other pictures.</li>
+      <li>The one and only <small><strong style="font-family: Helvetica,Arial,sans-serif;">Museum</strong></small>,
+        that tracks all the pictures on display, including some in the permanent
+        collection that can never be loaned.</li>
+    </ul>
+    <p>The facts are designed to ensure a consistent state, which means (among
+      other things):</p>
+    <ul>
+      <li>Pictures in the permanent collection are always on display.</li>
+      <li>All pictures are either on display or on loan to a client; no picture
+        can be simultaneously on display and on loan.</li>
+      <li>No two clients can have the same picture loaned to them.</li>
+      <li>If a client desires a picture, it must be on loan (otherwise the
+        museum could loan the picture immediately to the client).</li>
+      <li>No client can desire a picture that the client already has on loan.</li>
+    </ul><h3>Grading</h3><ul><li>Each fact is worth 5 points.&nbsp;</li><li>Partial credit will be considered. Use comments to describe the expression you are trying to write.</li><li><span style="font-weight: bold; color: red;">Make sure that your model is free of syntax errors</span>. Comment out those facts generating errors so that valid ones can execute.</li><li>Submit your solution to the Alloy Exam #1 dropbox in myCourses. Multiple solutions encouraged, last one graded.</li></ul>
+  </body></html>
